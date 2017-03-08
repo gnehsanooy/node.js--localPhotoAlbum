@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+  <div id="all">
+      <div id="con">
+          <div id="top">
+             <div id="nva">
+                 <div id="nvaleft">小小相册</div>
+                 <ul>
+                     <li><a href="http://127.0.0.1:3000/">全部相册</a></li>
+                     <li><a href="/up">上传</a></li>
+                 </ul>
+             </div>
+          </div>
+          <div id="container">
+              <div class="photos">
+                  <% for(var i=0;i<albums.length;i++){%>
+                       <div class="photo">
+                           <a href="<%= albums[i] %>">
+                               <img src="images/dog.png">
+                           </a>
+                           <p><%= albums[i] %></p>
+                       </div>
+                  <%}%>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+</html>

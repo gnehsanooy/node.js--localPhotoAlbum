@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/css/up.css">
+  <title></title>
+</head>
+<body>
+<div id="all">
+  <div id="con">
+    <div id="top">
+      <div id="nva">
+        <div id="nvaleft">小小相册</div>
+        <ul>
+          <li><a href="http://127.0.0.1:3000/">全部相册</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="container">
+
+          <form id="up" method="post" action="#" enctype="multipart/form-data">
+            <div id="div1">
+              <p>选择相册</p>
+              <select style="width:40%;height: 30px;border: 1px solid #cccccc;" name="wjj">
+                <%for(var i=0;i<albums.length;i++){%>
+                 <option><%=albums[i]%></option>
+
+                <%}%>
+              </select>
+            </div>
+            <div id="div2">
+              <p>选择图片</p>
+              <input type="file" name="tp">
+            </div>
+           <div id="div3">
+             <button type="submit">上传</button>
+           </div>
+
+          </form>
+
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
